@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+/* 導覽列 */
+nav{
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    background: #eeeeee;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding:10px 20PX;
+    align-items: center;
+}
+#LOGO img{
+    width:50px;
+}
+
+#link a{
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+
