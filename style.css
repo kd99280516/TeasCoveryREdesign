@@ -7,7 +7,7 @@
 nav{
     display: grid;
     grid-template-columns: 20% 70% 10%;
-    background: #eeeeee;
+    background: #9CB463;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     padding:10px 20PX;
     align-items: center;
@@ -19,6 +19,104 @@ nav{
 #link a{
     padding: 10px 30px;
     text-decoration: none;
+    font-weight: 900;
+    color:#333;
+    transition:0.5s;
 }
+#link a:hover{
+    color:rgb(10, 170, 117);
+}
+
+#product{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#product > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#product .pic img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+#product .text{
+    padding:30px 10PX 10PX 20PX;
+    width:500PX;
+}
+
+#product .text h1{
+    padding:20px 0PX;
+
+}
+
+
+#product .text p{
+    padding:10px 5PX;
+    line-height: 1.5;
+
+}
+
+#product>div:nth-child(2){
+    grid-template-areas:"pic text";
+    grid-template-columns: 40% 60%;
+
+   
+}
+
+#product>div:nth-child(2) .pic{
+    grid-area: pic;
+}
+#product>div:nth-child(2) .text{
+    grid-area: text;
+}
+
+.botton {
+    padding:2px 30px;
+    border: 1px solid #688463;
+    text-decoration: none;
+    color:#688463;
+    transition:0.5s;
+}
+
+.botton:hover{
+    background: #688463;
+    color:white;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    margin: 20px auto;
+    width: 1000px;
+}
+
+#info .pic img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#info .text h1{
+    margin: 20px 10px;
+
+}
+
+#info .text P{
+    margin: 20px 10px;
+    
+}
+
+body{
+    background:#EDF8D4;
+}
+
+
+
 
 
